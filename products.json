@@ -1,0 +1,83 @@
+[
+  {
+    "id": "restaurants",
+    "name": "مطاعم",
+    "link": "مطاعم.html"
+  },
+  {
+    "id": "markets",
+    "name": "ماركت",
+    "link": "ماركت.html"
+  },
+  {
+    "id": "attarin",
+    "name": "عطارين",
+    "link": "عطارين.html"
+  },
+  {
+    "id": "cleaners",
+    "name": "محلات منظفات",
+    "link": "محلات منظفات.html"
+  },
+  {
+    "id": "cafes",
+    "name": "كافيهات",
+    "link": "كافيهات.html"
+  },
+  {
+    "id": "coffee_mills",
+    "name": "مطاحن بن",
+    "link": "مطاحن بن.html"
+  },
+  {
+    "id": "clothes_shops",
+    "name": "محلات ملابس",
+    "link": "محلات ملابس.html"
+  },
+  {
+    "id": "phone_accessories",
+    "name": "اكسسوارات هواتف",
+    "link": "اكسوارات وهواتف.html"
+  },
+  {
+    "id": "computer_accessories",
+    "name": "اكسسوارات كمبيوتر",
+    "link": "اكسوارات وكمبيوتر.html"
+  },
+  {
+    "id": "club_games",
+    "name": "clup games",
+    "link": "clup games.html"
+  },
+  {
+    "id": "clinics",
+    "name": "عيادات",
+    "link": "عيادات.html"
+  },
+  {
+    "id": "hospitals",
+    "name": "مستشفيات",
+    "link": "مستشفيات.html"
+  },
+  {
+    "id": "pharmacies",
+    "name": "صيدليات",
+    "link": "صيدليات.html"
+  },
+  {
+    "id": "modern_technology",
+    "name": "قسم التكنولوجيا",
+    "link": "clup games.html"
+  },
+  {
+    "id": "modern_arts",
+    "name": "قسم الفنون",
+    "link": "clup games.html"
+  },
+  {
+            "id": "eskandar_attar",
+            "name": "اسكندر",
+            "link": "مجموعات فرعية/عطارين/اسكندر/اسكندر.html"
+        }
+        
+]
