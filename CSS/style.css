@@ -2168,7 +2168,7 @@ h1{margin-bottom:10px;}
 .sub{font-size:12px; color:var(--muted); display:block;}
 
 .btn{
-  padding:3px 75px;
+  padding:4px 55px;
   background:var(--accent);
   border:none;
   border-radius:8px;
@@ -2194,6 +2194,7 @@ h1{margin-bottom:10px;}
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
+
 
 
 
