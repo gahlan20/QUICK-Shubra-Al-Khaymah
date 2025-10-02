@@ -2139,7 +2139,7 @@ h1{margin-bottom:10px;}
 .grid{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:16px;
+  gap:15px;
 }
 
 /* البطاقة */
@@ -2164,11 +2164,11 @@ h1{margin-bottom:10px;}
   align-items:center;
 }
 
-.group-name{font-weight:bold;}
-.sub{font-size:12px; color:var(--muted); display:block;}
+.group-name{font-weight:;}
+.sub{font-size:10px; color:var(--muted); display:block;}
 
 .btn{
-  padding:4px 60px;
+  padding:3px 75px;
   background:var(--accent);
   border:none;
   border-radius:8px;
@@ -2177,20 +2177,13 @@ h1{margin-bottom:10px;}
  
 }
 
-
 /* استجابة */
-
-/* الموبايل (لحد 799px) دايمًا 2 أعمدة */
-@media (max-width: 799px){
+@media (min-width: 300px) and (max-width: 799px){
   .grid{ grid-template-columns: repeat(2,1fr); }
 }
-
-/* التابلت */
 @media (min-width: 800px) and (max-width: 1099px){
   .grid{ grid-template-columns: repeat(3,1fr); }
 }
-
-/* الكمبيوتر */
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
