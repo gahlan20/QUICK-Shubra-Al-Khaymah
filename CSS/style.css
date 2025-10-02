@@ -2121,143 +2121,68 @@ label[for="Area"] {
 
 
 
-
-/* متغيرات الألوان (اختياري، عشان تسهل التعديل) */
-:root {
-    --primary-color: #000000; /* لون الزر الرئيسي */
-    --primary-hover: #000000; /* لون الزر عند الـ hover */
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.315); /* ظل عادي */
-    --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.438); /* ظل عند الـ hover */
-    --transition: all 0.3s ease; /* تأثير الانتقال السلس */
-}
-
-/* ستايل المربع الرئيسي */
-.card {
-    background: rgb(255, 255, 255);
-    border-radius: 16px; /* حواف مستديرة حديثة */
-    overflow: hidden;
-    width: 300px; /* عرض ثابت على الديسكتوب */
-    transition: var(--transition);
-    box-shadow: var(--shadow); /* ظل ناعم */
-    display: inline-block; /* عشان يبقى جنباً إلى جنب لو في container */
-    margin: 10PX 10PX 10PX 10px; /* مسافة بين المربعات */
-    
-}
-
-/* تأثير عند المرور بالماوس على المربع */
-.card:hover {
-    transform: translateY(-8px); /* رفع خفيف */
-    box-shadow: var(--shadow-hover); /* ظل أقوى */
-}
-
-/* ستايل الصورة */
-.card-image {
-    position: relative;
-    height: 200px; /* ارتفاع ثابت للصورة */
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* الصورة تملأ المساحة بدون تشويه */
-    transition: var(--transition);
-}
-
-/* تأثير تكبير الصورة عند الـ hover */
-.card:hover .card-image img {
-    transform: scale(1.05); /* تكبير خفيف */
-}
-
-/* ستايل الزر تحت الصورة */
-.card-button {
-    display: block; /* يملأ العرض كامل */
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px 20px; /* مسافة داخلية */
-    border-radius: 8px; /* حواف مستديرة */
-    text-decoration: none; /* إزالة الخط تحت الرابط */
-    font-weight: 600; /* خط عريض */
-    text-align: center;
-    font-size: 16px;
-    margin: 15px; /* مسافة من الصورة */
-    transition: var(--transition);
-    border: none;
-    cursor: pointer;
-}
-
-/* تأثير الزر عند الـ hover */
-.card-button:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-2px); /* رفع خفيف */
-}
-
-/* Container الخارجي للبطاقات (أضفه إذا ما كان موجود) */
-.cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* مسافة افتراضية بين البطاقات */
-    padding: 10px; /* مسافة داخلية عامة */
-}
-
-/* أسلوب افتراضي للبطاقات (عرض كامل على الشاشات الكبيرة) */
-.card {
-    flex: 1 1 100%; /* عرض كامل افتراضي */
-    max-width: 100%;
-    margin: 10px; /* مسافة عامة */
-}
-
-.cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* مسافة بين البطاقات */
-  justify-content: center;
-  padding: 10px;
-}
-
-.card {
-  flex: 1 1 100%;
-  max-width: 100%;
-  margin: 5px 0;
-}
-
-/* من 300px إلى أقل من 480px: 2 بطاقات في الصف */
-@media (min-width: 300px) and (max-width: 750px) {
-  .card {
-    flex: 1 1 30%;
-    max-width: 30%;
-    margin: 1px;
-  }
-}
-
-/* من 480px إلى أقل من 768px: 3 بطاقات في الصف */
-@media (min-width: 480px) and (max-width: 767px) {
-  .card {
-    flex: 1 1 31%;
-    max-width: 30%;
-    margin:10px 10px 30px 5px ;
-    gap: 5px;
-  }
-}
-
-/* من 768px إلى أقل من 992px: 5 بطاقات في الصف */
-@media (min-width: 768px) and (max-width: 991px) {
-  .card {
-    flex: 1 1 18%;
-    max-width: 18%;
-    margin: 0;
-  }
-}
-
-/* من 992px إلى 1080px: 4 بطاقات في الصف */
-@media (min-width: 992px) and (max-width: 1080px) {
-  .card {
-    flex: 1 1 23%;
-    max-width: 23%;
-    margin: 0;
-  }
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #06b6d4;
+  --radius: 14px;
 }
 
 
 
+.container{ max-width:1200px; margin:auto; }
+
+h1{margin-bottom:10px;}
+.lead{color:var(--muted); margin-bottom:20px;}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:16px;
+}
+
+/* البطاقة */
+.card{
+  background: var(--card);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(0,0,0,0.3);
+  display:flex;
+  flex-direction:column;
+  transition:transform .3s;
+}
+.card:hover{transform:translateY(-5px);}
+
+.media{aspect-ratio:16/10; overflow:hidden;}
+.media img{width:100%; height:100%; object-fit:cover;}
+
+.body{
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.group-name{font-weight:bold;}
+.sub{font-size:12px; color:var(--muted); display:block;}
+
+.btn{
+  padding:6px 12px;
+  background:var(--accent);
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* استجابة */
+@media (min-width: 300px) and (max-width: 799px){
+  .grid{ grid-template-columns: repeat(2,1fr); }
+}
+@media (min-width: 800px) and (max-width: 1099px){
+  .grid{ grid-template-columns: repeat(3,1fr); }
+}
+@media (min-width: 1100px){
+  .grid{ grid-template-columns: repeat(4,1fr); }
+}
