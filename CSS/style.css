@@ -2186,3 +2186,18 @@ h1{margin-bottom:10px;}
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
+/* الموبايل (لحد 799px) دايمًا 2 أعمدة */
+@media (max-width: 799px){
+  .grid{ grid-template-columns: repeat(2,1fr); }
+}
+
+/* التابلت */
+@media (min-width: 800px) and (max-width: 1099px){
+  .grid{ grid-template-columns: repeat(3,1fr); }
+}
+
+/* الكمبيوتر */
+@media (min-width: 1100px){
+  .grid{ grid-template-columns: repeat(4,1fr); }
+}
+
