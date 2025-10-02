@@ -2167,14 +2167,15 @@ h1{margin-bottom:10px;}
 .group-name{font-weight:;}
 .sub{font-size:10px; color:var(--muted); display:block;}
 
-.btn{
-  padding:3px 75px;
-  background:var(--accent);
+.card button {
+  width: 220px;      /* عرض ثابت */
+  height: 30px; 
+   background:var(--accent);
   border:none;
-  border-radius:8px;
-   font-size:12px;
-  cursor:pointer;
- 
+  border-radius:8px;     /* طول ثابت */
+  font-size: 16px;   /* حجم الخط ثابت */
+  margin: 2px auto; /* علشان يبقى في النص */
+  display: block;    /* يخليه عنصر بلوك ويظهر في النص */
 }
 
 /* استجابة */
@@ -2187,6 +2188,7 @@ h1{margin-bottom:10px;}
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
+
 
 
 
