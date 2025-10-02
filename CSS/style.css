@@ -2170,7 +2170,7 @@ h1{margin-bottom:10px;}
 .card button {
   width: 220px;      /* عرض ثابت */
   height: 30px; 
-   background:var(--accent);
+  background:black;
   border:none;
   border-radius:8px;     /* طول ثابت */
   font-size: 16px;   /* حجم الخط ثابت */
@@ -2188,6 +2188,7 @@ h1{margin-bottom:10px;}
 @media (min-width: 1100px){
   .grid{ grid-template-columns: repeat(4,1fr); }
 }
+
 
 
 
