@@ -2223,10 +2223,10 @@ label[for="Area"] {
 }
 
 /* من 300px إلى أقل من 480px: 2 بطاقات في الصف */
-@media (min-width: 360px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 750px) {
   .card {
-    flex: 1 1 48%;
-    max-width: 48%;
+    flex: 1 1 30%;
+    max-width: 30%;
     margin: 1px;
   }
 }
@@ -2258,5 +2258,6 @@ label[for="Area"] {
     margin: 0;
   }
 }
+
 
 
