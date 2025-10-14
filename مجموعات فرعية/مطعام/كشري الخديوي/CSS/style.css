@@ -461,7 +461,7 @@ header .bottom_header .nav_linkc li.active a {
     text-transform: uppercase;
     background: var(--main_color);
     color: var(--white_color);
-    font-size: 30px;
+    font-size: 17px;
     padding: 10px 40px;
     display: flex;
     align-items: center;
@@ -1094,7 +1094,7 @@ footer .container .row .links a:hover {
 @media (max-width:800px) {
 
     .tpo_slide h2 {
-        font-size: 25px;
+        font-size: 18px;
         padding: 10px 25px;
     }
 
@@ -1107,8 +1107,8 @@ footer .container .row .links a:hover {
     }
 
     .product .icons .btn_add_cart {
-        font-size: 18px;
-        padding: 10px 10px;
+        font-size: 15px;
+        padding: 8px 8px;
     }
 
     .banners .banners_boxs {
