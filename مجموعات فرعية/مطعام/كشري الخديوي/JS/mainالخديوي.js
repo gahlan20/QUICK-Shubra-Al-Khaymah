@@ -15,7 +15,7 @@ function open_close_cart() {
     cart.classList.toggle("active")
 }
 
-fetch('products.json')
+fetch('productsالخديوي.json')
     .then(response => response.json())
     .then(data => {
 
