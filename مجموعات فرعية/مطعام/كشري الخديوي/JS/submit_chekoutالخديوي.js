@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("تم إرسال طلبك بنجاح!   كشري الخديوي ");
                 form.reset();
                 localStorage.removeItem('cart');
-                window.location.href = "index.html";
+                window.location.href = "الخديوي.html";
             } else {
                 alert("حدث خطأ في إرسال طلبك. يرجى المحاولة مرة أخرى. رسالة الخطأ: " + data.error);
                 console.error('Error from server:', data.error);
@@ -76,3 +76,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
