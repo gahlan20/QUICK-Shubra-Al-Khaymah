@@ -1,7 +1,7 @@
 [
   
   {
-    "id": 1,
+    "id":37,
     "img": "img/Gemini_Generated_Image_o8j9wfo8j9wfo8j9.png",
     "name": " مكرونة ساده",
     "price": 15,
@@ -9,7 +9,7 @@
     "catetory": "top"
   },
   {
-    "id": 1,
+    "id":38,
     "img": "img/عرض لحمه.png",
     "name": " مكرونة باللحمة",
     "price": 25,
@@ -18,7 +18,7 @@
   }
   ,
   {
-    "id": 1,
+    "id": 39,
     "img": "img/عرض سجق.png",
     "name": " مكرونة بالسجق",
     "price": 25,
@@ -304,4 +304,5 @@
   }
   
 ]
+
    
