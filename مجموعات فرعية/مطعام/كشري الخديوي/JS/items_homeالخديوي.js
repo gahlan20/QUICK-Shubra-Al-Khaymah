@@ -68,7 +68,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
               
             </div>
@@ -101,7 +101,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
              
             </div>
@@ -132,7 +132,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
             
             </div>
@@ -165,7 +165,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
               
             </div>
@@ -197,7 +197,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
              
             </div>
@@ -231,7 +231,7 @@ fetch('productsالخديوي.json')
             </div>
             <div class="icons">
               <span class="btn_add_cart ${isIncart ? 'active' : ''}" data-id="${product.id}">
-                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'add to cart'}
+                <i class="fa-solid fa-cart-shopping"></i>${isIncart ? 'Item in cart' : 'أضف للسلة'}
               </span>
              
             </div>
