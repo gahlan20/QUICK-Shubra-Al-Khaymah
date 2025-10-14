@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كشري الخديوي</title>
+
+
+    <link rel="icon" href="img/لوجو.png">
+
+
+
+
+    <link rel="stylesheet" href="CSS/styleالخديوي.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="CSS/styleالخديوي.css">
+</head>
+
+<body>
+
+
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>عناصر العربة : <span class="count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart" id="cart_items">
+
+        </div>
+
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>المجموع</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+
+
+            <div class="botton_cart">
+                <a href="checkoutالخديوي.html" class="btn_cart btn">الدفع</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">تسوق أكثر</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header>
+        <div class="top_headar">
+            <div class="container">
+                <a href="#" class="logo"><img src="img/لوجو.png" alt=""></a>
+
+                <form action="" class="search_box">
+
+
+                    
+
+
+                    <input type="text" name="search" id="search" placeholder="search for products" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                       
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count_item_heater">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+
+
+                     <ul class=nav_linkc>
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                          <li class="active"><a href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="dashboard.html">About</a></li>
+                        <li><a href="#foo">موقعنا</a></li>
+                        <li><a href="index.html">الاصناف</a></li>
+                    </ul>
+
+
+                </nav>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+    <div class="slider">
+        <div class="container">
+
+
+
+            <!-- swiper -->
+            <div class="slied-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/الخديوي اعلان1.jpg" alt=""></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/الخديوي اعلان2.jpg" alt=""></a>
+                    </div>
+
+                     <div class="swiper-slide">
+                        <a href="#"><img src="img/الخديوي اعلان3.jpg " alt=""></a>
+                    </div>
+
+                     
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+            <div class="banner_2">
+                <a href="#"><img src="img/علروض التوفير.jpg" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>عروض التوفير</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_items_sale">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   
+
+
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الكشري</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_kashri">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الطواجن</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_tajin">
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_3_img">
+                <a href="#" class="box"><img src="img/الخديوي اعلان1.jpg" alt=""></a>
+                <a href="#" class="box"><img src="img/الخديوي اعلان1.jpg" alt=""></a>
+
+                
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الوليمة والميكس</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_mix">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الحلو والمشروبات</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_sweet">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+ <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الاضافات</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_add">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+
+                <div class="tpo_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الاكثر مبيعا</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper_top">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <footer id="foo">
+        <div class="container">
+            <div class="big_row">
+                <img class="logo_footer" src="img/لوجو.png2.png" alt="">
+
+
+                <p>زورو موقعنا على</p>
+
+                <div class="icon_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>find it fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>laptops & computers</a>
+                 
+                </div>
+            </div>
+
+
+    
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- file js -->
+    <script src="JS/searchالخديوي.js"></script>
+
+    <script src="JS/swiperالخديوي.js"></script>
+    <script src="JS/items_homeالخديوي.js"></script>
+    <script src="JS/mainالخديوي.js"></script>
+
+
+
+
+   
+
+
+
+</body>
+
+</html>
