@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allSearchableData = []; // سيحتوي على جميع البيانات القابلة للبحث
 
-  // تحميل البيانات من ملف JSON الجديد
+  // تحميل البيانات من ملف JSON الرئيسي
   fetch("products.json") // تأكد أن هذا هو المسار الصحيح لملف JSON الخاص بك
     .then((res) => {
       if (!res.ok) {
@@ -15,8 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       allSearchableData = data;
-      // إضافة بيانات المنتجات من productsاسكندر.json
+
+      // ✅ هنا مكان إضافة أي ملفات JSON فرعية جديدة 👇
+      // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+      // 1️⃣ تحميل بيانات اسكندر
       return fetch("مجموعات فرعية/عطارين/اسكندر/productsاسكندر.json");
+
+      // 🆕 لو هتضيف ملفات تانية زي مطعم الخديوي
+      // انسخ السطر اللي فوق وعدل المسار فقط
+      // مثال:
+      // return fetch("مجموعات فرعية/مطعام/كشري الخديوي/productsالخديوي.json");
+      // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
     })
     .then((res) => {
       if (!res.ok) {
@@ -26,6 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((eskandarData) => {
       allSearchableData = allSearchableData.concat(eskandarData);
+
+      // 🆕 تحميل بيانات مطعم كشري الخديوي
+      return fetch("مجموعات فرعية/مطعام/كشري الخديوي/productsالخديوي.json");
+    })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
+    .then((khdewyData) => {
+      allSearchableData = allSearchableData.concat(khdewyData);
     })
     .catch((error) => {
       console.error("Error loading search data:", error);
@@ -47,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (item) =>
         (item.name && item.name.toLowerCase().includes(query)) ||
         (item.category && item.category.toLowerCase().includes(query)) ||
-        (item.store && item.store.toLowerCase().includes(query)) // إضافة البحث باسم المتجر
+        (item.store && item.store.toLowerCase().includes(query))
     );
 
     if (results.length === 0) {
@@ -67,18 +89,16 @@ document.addEventListener("DOMContentLoaded", () => {
         div.textContent = displayText;
 
         div.addEventListener("click", () => {
-          searchInput.value = item.name; // وضع اسم العنصر في حقل البحث
+          searchInput.value = item.name;
           suggestionsBox.classList.remove("active");
-          // عند النقر، انتقل إلى الصفحة المرتبطة بالعنصر
           if (item.link) {
             window.location.href = item.link;
           } else {
-            // إذا لم يكن هناك رابط مباشر، حاول التمرير إلى المنتج إذا كان في نفس الصفحة
             const productEl = document.getElementById(`product-${item.id}`);
             if (productEl) {
               productEl.scrollIntoView({ behavior: "smooth", block: "start" });
               setTimeout(() => {
-                window.scrollBy({ top: -70, behavior: "smooth" }); // لتعويض الهيدر الثابت
+                window.scrollBy({ top: -70, behavior: "smooth" });
               }, 400);
               productEl.classList.add("highlight");
               setTimeout(() => productEl.classList.remove("highlight"), 2000);
