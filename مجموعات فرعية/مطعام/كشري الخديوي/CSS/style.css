@@ -1917,7 +1917,7 @@ padding-bottom: 20px;
   }
   .product .img_product { height: 140px; }
   .product { height: auto; } /* خلي الكارت ارتفاع متكيف على الموبايل */
-  .product .name_product { font-size: 25px; min-height: auto; }
+  .product .name_product { font-size: 20px; min-height: auto; }
 }
 
 
@@ -2114,3 +2114,4 @@ label[for="Area"] {
 #Area option {
   padding: 10px;
 }
+
