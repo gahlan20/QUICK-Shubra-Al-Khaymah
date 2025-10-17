@@ -17,8 +17,26 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="CSS/styleالخديوي.css">
+    <link rel="stylesheet" href="CSS/ad-popupالخديوي.css">
 </head>
+<!-- (اختياري) إعدادات الإعلان: صورة/فيديو ومدة العداد -->
+<script>
+  window.AD_POPUP_CONFIG = {
+    // mediaType: 'image' أو 'video'
+    mediaType: 'image',
+    // مسار الصورة أو الفيديو
+    src: 'img/images.jpeg',
+    // لو فيديو: بوستر اختياري، والأوتوبلاي لازم يكون muted عشان المتصفحات
+    poster: '',
+    autoplay: true,
+    muted: true,
+    // العداد بالثواني قبل تفعيل زر الإغلاق
+    countdownSeconds: 5
+  };
+</script>
+
+<!-- سكريبت البوب-أب -->
+<script src="JS/ad-popupالخديوي.js"></script>
 
 <body>
 
@@ -95,7 +113,7 @@
                      <ul class=nav_linkc>
                         <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
 
-                          <li class="active"><a href="https://gahlan20.github.io/QUICK-Shubra-Al-Khaymah/%D9%85%D8%B7%D8%A7%D8%B9%D9%85.html">الصفحة الرئيسية</a></li>
+                          <li class="active"><a href="index.html">الصفحة الرئيسية</a></li>
                         <li><a href="dashboard.html">About</a></li>
                         <li><a href="#foo">موقعنا</a></li>
                         <li><a href="index.html">الاصناف</a></li>
@@ -426,6 +444,5 @@
 
 
 </body>
-
 
 </html>
